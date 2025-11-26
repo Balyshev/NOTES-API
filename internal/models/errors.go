@@ -3,11 +3,15 @@ package models
 import "errors"
 
 var (
-	ErrUsernameRequired = errors.New("username is required")
-	ErrUsernameTooLong  = errors.New("username must be at most 50 characters")
-	ErrUsernameTooShort = errors.New("username must be at least 3 characters")
-	ErrUserNotFound     = errors.New("user not found")
-	ErrUsernameExists   = errors.New("username already exists")
+	ErrUsernameRequired   = errors.New("username is required")
+	ErrUsernameTooLong    = errors.New("username must be at most 50 characters")
+	ErrUsernameTooShort   = errors.New("username must be at least 3 characters")
+	ErrUserNotFound       = errors.New("user not found")
+	ErrUsernameExists     = errors.New("username already exists")
+	ErrPasswordRequired   = errors.New("password is required")
+	ErrPasswordTooShort   = errors.New("password must be at least 6 characters")
+	ErrInvalidCredentials = errors.New("invalid username or password")
+	ErrUnauthorized       = errors.New("unauthorized")
 )
 
 var (
